@@ -17,6 +17,18 @@ app.get('', (req, res) => {
     res.render('home')
 })
 
+app.get('/about', (req, res) => {
+    res.render('about')
+})
+
+app.get('/project', (req, res) => {
+    res.render('project')
+})
+
+app.get('/contact', (req, res) => {
+    res.render('contact')
+})
+
 
 
 app.listen(port, () => console.info(`Listening on port ${port}`))
