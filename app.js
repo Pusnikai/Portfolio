@@ -15,21 +15,8 @@ app.set('views', './views')
 app.set('view engine', 'ejs')
 
 
-app.get('/', (req, res) => {
-    res.render('home')
-})
-
-app.get('/about', (req, res) => {
-    res.render('about')
-})
-
-app.get('/project', (req, res) => {
-    res.render('project')
-})
-
-app.get('/contact', (req, res) => {
-    res.render('contact')
-})
+const indexRouter = require('./controllers/index')
+app.use('/', indexRouter)
 
 
 
