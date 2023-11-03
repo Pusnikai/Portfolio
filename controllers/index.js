@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+//router rendering view files
 router.get('/', (req, res) => {
     res.render('home');
 });
@@ -17,4 +18,5 @@ router.get('/contact', (req, res) => {
     res.render('contact');
 });
 
+//exporting the routers
 module.exports = router;
